@@ -1,7 +1,8 @@
-// This is your entry file! Refer to it when you render:
-// npx remotion render <entry-file> HelloWorld out/video.mp4
-
+/**
+ * This is the entry file for Remotion rendering (CLI/Studio).
+ * Register our new RemotionRoot which exposes the 'NoteVideo' composition.
+ */
 import { registerRoot } from "remotion";
-import { RemotionRoot } from "./Root";
+import { RemotionRoot } from "./remotion/Root";
 
 registerRoot(RemotionRoot);

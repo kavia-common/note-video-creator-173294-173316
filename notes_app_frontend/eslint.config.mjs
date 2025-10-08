@@ -8,7 +8,13 @@ export default [
     languageOptions: {
       parser: tsParser,
       globals: {
-        React: 'readable'  // Add this line to define React as a global
+        React: 'readable',  // Define React as a global
+        window: 'readable',
+        document: 'readable',
+        localStorage: 'readable',
+        crypto: 'readable',
+        setTimeout: 'readable',
+        clearTimeout: 'readable'
       }
     },
     plugins: {
